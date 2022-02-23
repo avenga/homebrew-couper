@@ -2,21 +2,21 @@ class Couper < Formula
     desc "Couper is a lightweight open source API gateway designed to support developers in building and running API-driven Web projects."
     homepage "https://couper.io/"
     license "MIT"
-    version "v1.7.1"
+    version "v1.7.1-joe"
     head "https://github.com/avenga/couper.git", branch: "master"
 
     on_macos do
       if Hardware::CPU.arm?
-        url "https://github.com/avenga/couper/releases/download/v1.7.1/couper-v1.7.1-macos-arm64.zip"
-        sha256 "f4aba245dea2d7c730db64abcf82b41ecafe1b4f559c444d7adb1c5c2c314fab"
+        url "https://github.com/avenga/couper/releases/download/v1.7.1-joe/couper-v1.7.1-joe-macos-arm64.zip"
+        sha256 "566153de85011486743b405dcff0f5d2680349ce72cf2fc7e94f290527413ff9"
 
         def install
           bin.install "couper"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/avenga/couper/releases/download/v1.7.1/couper-v1.7.1-macos-amd64.zip"
-        sha256 "086b2a141cb85a799eed1158a085f61b1f355a6d4dda263be5d5dccbe746e376"
+        url "https://github.com/avenga/couper/releases/download/v1.7.1-joe/couper-v1.7.1-joe-macos-amd64.zip"
+        sha256 "5cc11ddb6dbc44f99799cc08f33f31e4a87238c1fb10a7cd53315a8cffa51771"
 
         def install
           bin.install "couper"
@@ -26,16 +26,16 @@ class Couper < Formula
 
     on_linux do
       if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-        url "https://github.com/avenga/couper/releases/download/v1.7.1/couper-v1.7.1-linux-arm64.zip"
-        sha256 "4656d67ae24c89a1382e0bc3437e43fa3774e65015f11024f25f09ba54f5a2e9"
+        url "https://github.com/avenga/couper/releases/download/v1.7.1-joe/couper-v1.7.1-joe-linux-arm64.zip"
+        sha256 "3a62dfec1527995ad19d2847ef213603f0c379fecb1966dfa67177c35fb08844"
 
         def install
           bin.install "couper"
         end
       end
       if Hardware::CPU.intel?
-        url "https://github.com/avenga/couper/releases/download/v1.7.1/couper-v1.7.1-linux-amd64.zip"
-        sha256 "e9ddbc52dadf24a244707d3439960cb72eea345a3eddb9b8f2ef5ee0f5a576d1"
+        url "https://github.com/avenga/couper/releases/download/v1.7.1-joe/couper-v1.7.1-joe-linux-amd64.zip"
+        sha256 "83d3534cb38b323284c765382dfc84d8e82f01f974ea5921893ff96a12fae236"
 
         def install
           bin.install "couper"
